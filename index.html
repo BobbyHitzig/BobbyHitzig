@@ -9,57 +9,72 @@
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <!-- Home CSS Sheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
   
 </head>
 
 <body>
       
+<div id="btn" class="dropdown is-hoverable is-right">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="23" height="23"
+        viewBox="0 0 50 50"
+        style=" fill:#A9A9A9;">
+        <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path></svg>            
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+    <div class="dropdown-content">      
+      
+      <a href="#" class="dropdown-item">
+        This is a link
+      </a>     
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <a href="#" class="dropdown-item">
+        This is a link
+      </a>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 30 30" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">About Me</a>
-            <a class="dropdown-item" href="#">Projects</a>
-            <a class="dropdown-item" href="#">Resume</a>
-            <a class="dropdown-item" href="#">Contact Information</a>
-          </div>
-        </li>
-     
-      </ul>
-
+      <a href="#" class="dropdown-item">
+        This is a link
+      </a>
+      
     </div>
-  </nav>
+  </div>
+</div>
+       
+        <!-- <div id="btn" class="button is-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="23" height="23"
+            viewBox="0 0 50 50"
+            style=" fill:#A9A9A9;"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path></svg>
+          </a>
+        </div> -->
+
 
 
   <div>
         <section id="section1">
             <div>
-                <h1>Bobby Hitzig main test</h1>
-                <p>Your next web developer</p>
+                <h1 class="has-text-dark">Bobby Hitzig</h1>
+                <p class="has-text-dark">Your next web developer</p>
             </div>
         </section>
   </div>
 
+
+
+
+
   <!-- SCRIPTS -->
   <script src="app.js"></script>
-  <!-- BootStrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
