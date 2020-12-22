@@ -2,7 +2,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
+/* nav bar */
 .largeNav{
     background-color: grey;
     height: 70px;
@@ -11,7 +11,6 @@ body{
 }
 
 .container{
-    /* background-image: url("https://images.unsplash.com/photo-1569864753955-572638f41b19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,14 +50,25 @@ body{
     
 }
 
-#backdrop{
+.backdrop{
     background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh);
+    height: calc(50vh);
     width: 100%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dark-grey;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
+
 
 /* MENU BAR START */
 
@@ -155,3 +165,6 @@ body{
 .nav-link:hover::after{
     transform: scaleX(1);
 }
+
+
+
