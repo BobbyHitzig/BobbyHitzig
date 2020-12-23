@@ -2,45 +2,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, p{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: dark-grey;
-    position: relative;
-    top: 220px;
-}
-
-h1{
-    font-size: 2rem;
-}
-p{
-    font-size: 1.5rem;
-}
-
-.container{
-    background-image: url("https://images.unsplash.com/photo-1569864753955-572638f41b19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh);
+/* nav bar */
+.largeNav{
+    background-color: grey;
+    height: 70px;
     width: 100%;
-    
-}
-
-
-
-div section h1{
-    font-size: 50px;
-}
-
-#btn{
-    position: fixed;
-    top: 10px; right: 10px;
-    background-color: transparent;
-    border: transparent;
+    position: relative;
 }
 
 *{
@@ -48,7 +15,46 @@ div section h1{
     padding: 0;
 }
 
-/* menu bar */
+#nameLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 30px;
+    height: 25px;
+    position: fixed;
+    top: 21px;
+    left: 30px;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    outline: none;
+    white-space: nowrap;
+    font-size: 25px;
+}
+
+.backdrop{
+    background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(40vh);
+    width: 100%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dark-grey;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+/* MENU BAR START */
 
 .hamburger-menu{
     width: 30px;
@@ -65,7 +71,7 @@ div section h1{
 .line{
     width: 100%;
     height: 3px;
-    background-color: chocolate;
+    background-color: black;
     transition: all 0.8s;
 }
 
@@ -93,6 +99,7 @@ div section h1{
     align-items: center;
     border-radius: 20% 0 0 50%;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+    z-index: 1000;
 }
 
 .change{
@@ -142,4 +149,6 @@ div section h1{
 .nav-link:hover::after{
     transform: scaleX(1);
 }
-/* menu bar end*/
+
+
+
